@@ -1,11 +1,8 @@
 <?php
-$host = "your-mysql-server.mysql.database.azure.com";
-$dbname = "flutterdb";
-$username = "your-username@your-mysql-server";
-$password = "your-password";
+// Display a basic message
+echo "<h2>Welcome to My PHP App on Azure!</h2>";
+echo "<p>Your Azure App Service is working correctly.</p>";
 
-$conn = new mysqli($host, $username, $password, $dbname);
-if ($conn->connect_error) {
-    die(json_encode(["error" => $conn->connect_error]));
-}
+// Display PHP information (Useful for debugging)
+phpinfo();
 ?>
