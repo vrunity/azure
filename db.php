@@ -1,8 +1,6 @@
 <?php
-// Display a basic message
-echo "<h2>Welcome to My App!</h2>";
-echo "<p>Your Azure App Service is working correctly.</p>";
-
-// Display PHP information (Useful for debugging)
-phpinfo();
+$url = "https://api.ram.com/test"; // Example API URL
+$response = file_get_contents($url);
+echo "<h2>Response from API:</h2>";
+echo "<pre>$response</pre>";
 ?>
